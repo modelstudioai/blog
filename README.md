@@ -19,6 +19,7 @@ We publish in four categories:
 
 | Date | Title | Category |
 |---|---|---|
+| 2026-06-11 | [AI Marketing with Qwen Code: Generate Images, Product Photos & Copywriting](content/guides/qwencode-bailian-ai-marketing.md) | Guide |
 | 2026-05-29 | [Generating AI Covers for WeChat Official Accounts](content/guides/qwencode-mpcover-skill-guide.md) | Guide |
 
 ## Repository Structure
@@ -67,6 +68,7 @@ Model Studio AI 官方博客 — 精选的大模型应用指南、开源 AI 工�
 
 | 日期 | 标题 | 分类 |
 |---|---|---|
+| 2026-06-11 | [AI 营销全流程：一句话出图、拍照生商品图、写文案发公众号](content/guides/qwencode-bailian-ai-marketing.md) | 使用指南 |
 | 2026-05-29 | [公众号 AI 封面生成技能指南](content/guides/qwencode-mpcover-skill-guide.md) | 使用指南 |
 
 ### 仓库结构
