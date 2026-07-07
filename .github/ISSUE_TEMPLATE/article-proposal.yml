@@ -1,0 +1,52 @@
+name: Article Proposal / 文章投稿
+description: Propose a new article for the Model Studio AI Blog / 向 Model Studio AI Blog 投稿新文章
+labels: ["article-proposal"]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: Article Overview / 文章概述
+      description: 描述这篇文章的主题、解决的问题和目标受众。 / Describe what this article is about, what problem it solves, and who the target audience is.
+      placeholder: |
+        例如：本文介绍如何用 Qwen Code + 百炼 CLI 生成营销图片、商品图和文案——一套面向电商团队的完整 AI 工作流。
+        e.g. This article walks through how to use Qwen Code + Bailian CLI to generate marketing images, product photos, and copywriting — a complete AI-powered workflow for e-commerce teams.
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author / 作者
+      description: 你的名字或 GitHub 用户名。 / Your name or GitHub username.
+      placeholder: 例如：joeytoday / e.g. joeytoday
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Solved / 解决的问题
+      description: 这篇文章解决了什么具体问题或痛点？ / What specific problem or pain point does this article address?
+      placeholder: |
+        例如：电商团队花大量时间制作商品图片、营销文案和促销素材，设计师和文案被重复性任务拖住。
+        e.g. E-commerce teams spend hours creating product images, marketing copy, and promotional materials. Designers and copywriters are bottlenecked by repetitive tasks.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category / 文章分类
+      description: 选择文章所属分类。 / Choose the category for your article.
+      options:
+        - Guide / 使用指南
+        - Tutorial / 深度教程
+        - Insight / 行业洞察
+        - Case Study / 案例研究
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Full Article Content / 完整正文
+      description: 粘贴完整的文章内容（Markdown 格式）。 / Paste the complete article text here (Markdown format).
+
+    validations:
+      required: true

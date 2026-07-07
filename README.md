@@ -37,7 +37,7 @@ content/
 We welcome contributions from the community. Whether it's a typo fix, a translation, or an entirely new tutorial — every PR matters.
 
 - **Found an error?** Open an issue or submit a PR directly.
-- **Want to propose a new article?** Open an issue with the `article-proposal` label and we'll discuss the angle.
+- **Want to propose a new article?** [Open an article proposal issue](https://github.com/modelstudioai/blog/issues/new?template=article-proposal.yml&labels=article-proposal) and we'll discuss the angle together.
 - **Translations** are highly encouraged. If you translate an article, keep the original author's credit and add your own as translator.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
@@ -80,6 +80,12 @@ content/
 ├── insights/      # 生态分析与趋势报告
 └── cases/         # 案例研究与实战经验
 ```
+
+### 投稿
+
+- **想写新文章？** [开一个文章投稿 Issue](https://github.com/modelstudioai/blog/issues/new?template=article-proposal.yml&labels=article-proposal)，我们一起讨论角度
+
+源码仓库：[modelstudioai/blog](https://github.com/modelstudioai/blog)
 
 ### 关于 Model Studio AI
 
