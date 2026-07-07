@@ -1,0 +1,59 @@
+name: Article Proposal
+description: Propose a new article for the Model Studio AI Blog
+labels: ["article-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing an article! Please fill out the sections below.
+        We'll review the proposal and discuss the angle together.
+  - type: textarea
+    id: overview
+    attributes:
+      label: Article Overview
+      description: Describe what this article is about, what problem it solves, and who the target audience is.
+      placeholder: |
+        e.g. This article walks through how to use Qwen Code + Bailian CLI to generate marketing images, product photos, and copywriting — a complete AI-powered workflow for e-commerce teams.
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Your name or GitHub username.
+      placeholder: e.g. joeytoday
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Solved
+      description: What specific problem or pain point does this article address?
+      placeholder: |
+        e.g. E-commerce teams spend hours creating product images, marketing copy, and promotional materials. Designers and copywriters are bottlenecked by repetitive tasks.
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Full Article Content
+      description: Paste the complete article text here (Markdown format).
+      placeholder: |
+        ---
+        title: "Your Article Title"
+        date: "2026-07-07"
+        description: "A short summary of your article."
+        author: "your-name"
+        tags: ["Tutorials", "Skills"]
+        ---
+        
+        Your article content here...
+      value: |
+        ---
+        ---
+        
+        # Full Article
+        
+        
+    validations:
+      required: true
