@@ -1,0 +1,103 @@
+name: Community Project Case / 社区项目案例
+
+description: Propose an independently maintained open-source project case built with Model Studio / 提交基于阿里云百炼构建的独立开源项目案例
+
+labels: ["project-case"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Community Project Cases document complete open-source projects, not only lightweight usage examples.
+
+        社区项目案例用于记录完整开源项目，而不只是轻量使用截图。提交不代表自动收录、官方背书、支持 SLA 或商业合作；维护者确认、技术核验和安全边界评审通过后才会发布。
+
+  - type: input
+    id: project
+    attributes:
+      label: Project / 项目名称
+      placeholder: "e.g. ClawMio"
+    validations:
+      required: true
+
+  - type: input
+    id: repository
+    attributes:
+      label: Repository / 项目仓库
+      description: 独立公开 GitHub 仓库 URL。 / Public repository URL.
+      placeholder: "https://github.com/owner/repo"
+    validations:
+      required: true
+
+  - type: input
+    id: maintainer
+    attributes:
+      label: Maintainer / 维护者
+      description: 负责确认内容、维护项目并处理后续问题的 GitHub ID。 / GitHub ID responsible for the project and case review.
+      placeholder: "@username"
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License / 许可证
+      placeholder: "MIT / Apache-2.0 / ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: Project Overview / 项目概述
+      description: 目标用户、解决的问题、核心功能与当前成熟度。 / Audience, problem, core capabilities, and current maturity.
+    validations:
+      required: true
+
+  - type: textarea
+    id: modelstudio
+    attributes:
+      label: Model Studio Integration / 阿里云百炼关联
+      description: 说明阿里云百炼位于运行时还是开发链路，使用了哪些模型、API、Agent、Memory、Skill 或工具。 / Explain where and how Model Studio is used.
+      placeholder: |
+        - Runtime or development path:
+        - Models / APIs / Agents / Skills:
+        - Inputs and outputs:
+    validations:
+      required: true
+
+  - type: textarea
+    id: architecture
+    attributes:
+      label: Architecture and Reproduction / 架构与复现
+      description: 提供架构、依赖、部署步骤、验收方式和真实 Demo。不要粘贴 API Key 或其他凭证。 / Architecture, setup, validation, and demo. Never include secrets.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / 截图与证据
+      description: 提供真实运行截图、视频、Release、CI 或使用案例链接。 / Real screenshots, video, release, CI, or usage evidence.
+    validations:
+      required: true
+
+  - type: textarea
+    id: security
+    attributes:
+      label: Security and Known Limitations / 安全边界与已知限制
+      description: 说明凭证、权限、数据、费用、部署规模和待验证事项。 / Credentials, permissions, data, billing, scale, and unverified items.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations / 确认项
+      options:
+        - label: I am the maintainer or I have the maintainer's permission to submit this case. / 我是维护者，或已获得维护者同意。
+          required: true
+        - label: I understand that inclusion does not make the project an official Alibaba Cloud product. / 我理解收录不代表项目成为阿里云官方产品。
+          required: true
+        - label: I have removed API keys, tokens, passwords, personal information, and other secrets. / 我已移除密钥、Token、密码、个人信息等敏感内容。
+          required: true
